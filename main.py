@@ -66,6 +66,6 @@ def ocr(file):
 
 
 if __name__ == '__main__':
-    # reader = easyocr.Reader(['ch_sim', 'en'], model_storage_directory='./model',
-    #                         user_network_directory='./user_network')  # this needs to run only once to load the model into memory
+    reader = easyocr.Reader(['ch_sim', 'en'], model_storage_directory='./model',
+                            user_network_directory='./user_network')  # this needs to run only once to load the model into memory
     app.run(host='0.0.0.0', port=5001)
